@@ -37,7 +37,7 @@
                      colors: {
                          clifford: '#da373d',
                          pcolor: '#12121299',
-                         gend: '#F00',
+                         bcolor: '#F85559',
                      }
                  }
              }
@@ -50,8 +50,54 @@
 </head>
 <!-- start main file  -->
 <body>
-    <header>
+    <header class="container mx-auto mt-8 ">
+        <!-- navber strat here -->
+        <div class="navbar my-10 lg:bg-bcolor rounded-full px-8 flex">
+            
+            <div class="hidden lg:flex lg:navbar-start">
+              <ul class="menu menu-horizontal grid grid-cols-4 px-1 gap-20 text-white font-medium">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
 
+            <div class="navbar-center lg:ml-56 flex w-[270px] lg:text-white text-black text-5xl font-bold">
+                <img src="images/logo.png" alt="">
+                <a class="btn navbar-end btn-ghost normal-case text-xl">Fruit Burst</a>
+            </div>
+
+            <div class="navbar-end hidden lg:flex menu menu-horizontal ">
+                <input class="rounded-full text-base ml-52 p-2 border-none text-black" type="text" name="" id=""
+                placeholder="Search here">
+
+            </div>
+
+            <div class="navbar-end">
+                <div class="dropdown dropdown-left">
+                  <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                  </label>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                    <li>       
+                            <input class="rounded-full text-base p-2 border-none text-black" type="text" name="" id=""
+                            placeholder="Search here">
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+
+            
+            
+          </div>
+          
+        <!-- navber end here  -->
     </header>
     <main>
 
